@@ -13,6 +13,7 @@ jobs:
       - name: Job1 step 3     
         run: echo "Deploying application for Job1 ..."
   job2: 
+    needs: job1
     runs-on: ubuntu-latest
     steps:   
       - name: job2 step 1
